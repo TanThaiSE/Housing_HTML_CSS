@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="./lib/owl-carousel/assets/owl.theme.default.min.css">
     <!--lightBox  -->
     <link rel="stylesheet" href="./lib/lightbox/css/lightbox.min.css">
+    <!-- Fancybox -->
+    <link rel="stylesheet" href="./lib/fancybox-master/dist/jquery.fancybox.min.css">
     <!--My Css -->
     <link rel="stylesheet" href="./css/style.css" />
 
@@ -163,7 +165,7 @@
 
     </div>
 
-    <!-- Blog CHUAW XONGGG SLIDE-->
+    <!-- Blog-->
     <div class="blog">
         <h1>Blog</h1>
         <div class="blog__items">
@@ -174,9 +176,9 @@
                     <h1>Lorem Ipsum Passage,</h1>
                     <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
                 </div>
-                <a href="" data-lightbox="g1">Read more...</a>
+                <a data-fancybox data-src="#modal" href="javascript:;">Read more...</a>
             </div>
-    
+
             <div class="blog__card">
                 <div class="blog__lineimage"></div>
                 <img src="./images/g2.jpg" alt="">
@@ -184,7 +186,7 @@
                     <h1>Lorem Ipsum Passage,</h1>
                     <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
                 </div>
-                <a href="" data-lightbox="g1">Read more...</a>
+                <a data-fancybox data-src="#modal" href="javascript:;">Read more...</a>
             </div>
     
             <div class="blog__card">
@@ -194,27 +196,39 @@
                     <h1>Lorem Ipsum Passage,</h1>
                     <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
                 </div>
-                <a href="" data-lightbox="g1">Read more...</a>
+                <a data-fancybox data-src="#modal" href="javascript:;">Read more...</a>
             </div>
         </div>
-        
+
+        <div class="card__blog" id="modal">
+            <h1 class="card_title">Housing</h1>
+            <img src="./images/img2.jpg" alt="">
+            <p class="card__content">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+                nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in
+                ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat
+                quo voluptas nulla pariatur.</p>
+        </div>
+
     </div>
 
 
-    <!--Get More..  CHUAW XONGGG SLIDE -->
+    <!--Get More.. -->
     <div class="introduce">
         <div class="introduce__video">
-            <i class="far fa-play-circle"></i>
+            <a data-fancybox data-type="iframe" data-src="https://player.vimeo.com/video/106770833" href="javascript:;"  >
+                <i class="far fa-play-circle"></i>
+            </a>
+
         </div>
         <div class="introduce__getmore">
             <h1>Get More..</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut minim veniam, labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.</p>
-            <a href="" data-lightbox="g1">Read more...</a>
+            <a data-fancybox data-src="#modal" href="javascript:;">Read more...</a>
         </div>
     </div>
 
 
-    <!--Portfolio Còn slide chuyển -->
+    <!--Portfolio-->
     <div class="portfolio">
         <h1>Portfolio</h1>
         <div class="portfolio__items">
@@ -297,7 +311,7 @@
     </div>
 
 
-    <!-- Subscribe XONG-->
+    <!-- Subscribe-->
     <div class="subscribe">
         <div class="subscribe__content">
             <h1>Subscribe</h1>
@@ -307,14 +321,14 @@
                     <input type="email" name="" id="" placeholder="Email">
                 </div>
                 <div class="subcribe__submit">
-                    <button>Click</button>
+                    <button type="submit">Click</button>
                 </div>
 
             </form>
         </div>
     </div>
 
-    <!-- Our Agents XONG -->
+    <!-- Our Agents-->
     <div class="ouragents">
         <h1>Our Agents</h1>
         <div class="ouragents__items">
@@ -374,7 +388,7 @@
         </div>
     </div>
 
-    <!-- Map XONG-->
+    <!-- Map-->
     <div class="map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.1029179561147!2d106.70933329319647!3d10.803429069661092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x29a90e7b637882c6!2s30Shine!5e0!3m2!1svi!2s!4v1617526796684!5m2!1svi!2s"
         width="100%"
@@ -384,7 +398,7 @@
         loading="lazy"></iframe>
     </div>
 
-    <!-- Contact Us XONG-->
+    <!-- Contact Us-->
     <div class="contactus">
         <h1>Contact Us</h1>
         <div class="container">
@@ -473,5 +487,8 @@
     </script>
     <!-- Lightbox -->
     <script src="./lib/lightbox/js/lightbox.min.js"></script>
+    <!-- Fancybox -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="./lib/fancybox-master/dist/jquery.fancybox.min.js"></script>
 </body>
 </html>

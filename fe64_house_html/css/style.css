@@ -303,6 +303,27 @@ header{
 
 }
 
+.card__blog{
+    display: none;
+    width: 40%;
+}
+.card__blog .card_title{
+    background: #00cdce;
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding-bottom: 13px;
+    margin-bottom: 14px;
+}
+.card__blog img{
+    width: 100%;
+}
+.card__blog .card__content{
+    color: #999;
+    font-size: 15px;
+    line-height: 2em;
+}
+
 /* Get More.. */
 .introduce{
     display: grid;
@@ -461,8 +482,15 @@ header{
     background-color: black;
     color: white;
     font-size: 23px;
+    transition: all 0.5s;
 }
-
+.subcribe__submit button:hover{
+    font-size: 23px;
+    padding: 6px 50px;
+    color: #000;
+    background-color: #dfdfdf;
+    cursor: pointer;
+}
 /* Our Agents */
 .ouragents{
     margin-bottom: 50px;
